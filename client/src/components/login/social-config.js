@@ -9,7 +9,7 @@ const facebook = {
   export const facebookConfig = facebook;
 
   const google = {
-    client_id: 'YOUR GOOGLE APP ID GOES HERE',
+    client_id: '443877087430-dhssb52hhj1vjbj798isn4mu4tbji3v5.apps.googleusercontent.com',
     scope: "https://www.googleapis.com/auth/plus.login"
   };
    
