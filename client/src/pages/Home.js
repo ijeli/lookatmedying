@@ -15,6 +15,7 @@ class Home extends Component {
         fetch('/api/symptoms', {
             method: 'GET'
         }).then(function(response) {
+            console.log(response);
             return response.json();
         }).then(function(data) {
             self.setState({symptoms: data});
