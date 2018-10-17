@@ -15,7 +15,9 @@ class Home extends Component {
         fetch('/api/symptoms', {
             method: 'GET'
         }).then(function(response) {
-            console.log(response);
+            if (response.status >= 400) {
+                throw new Error("Bad response from server");
+            }
             return response.json();
         }).then(function(data) {
             self.setState({symptoms: data});
