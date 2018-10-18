@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactModalLogin from 'react-modal-login';
 import {facebookConfig, googleConfig} from "./social-config";
+import PostData from '../services/PostData';
  
 class LoginModal extends React.Component {
  
@@ -18,6 +19,7 @@ class LoginModal extends React.Component {
   openModal() {
     this.setState({
       showModal: true,
+      PostData
     });
   }
  
