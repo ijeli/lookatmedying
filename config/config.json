@@ -1,7 +1,9 @@
 {
 	"development": {
 		"username": "root",
-		"password": "Qaplzaml28!",
+
+		"password": "Jjb117jjB",
+
 		"database": "check_ill_db",
 		"host": "127.0.0.1",
 		"dialect": "mysql"
