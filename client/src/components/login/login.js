@@ -2,6 +2,7 @@ import React from 'react';
 import ReactModalLogin from 'react-modal-login';
 import {facebookConfig, googleConfig} from "./social-config";
 import PrivacyPolicy from './PrivacyPolicy';
+
  
 class LoginModal extends React.Component {
  
@@ -26,14 +27,19 @@ class LoginModal extends React.Component {
     this.setState({
       showModal: false,
       error: null,
-      Policy: false
     });
+  }
+
+  nextPath(path) {
+    this.props.history.push(path)
   }
   
   onLoginSuccess(method, response) {
     console.log('logged successfully with ' + method);
-    
-  }
+    if(response.data.code === 200){
+      this.nextPath('/home');
+    };
+}
  
   onLoginFail(method, response) {
     console.log('logging failed with ' + method);
