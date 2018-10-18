@@ -64,7 +64,7 @@ class LoginModal extends React.Component {
       <div>
  
         <button
-          onClick={() => this.openModal()}
+          className = 'btn btn-primary' onClick={() => this.openModal()}
         >
           Sign In/Sign Up 
         </button>

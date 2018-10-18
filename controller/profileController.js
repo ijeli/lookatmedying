@@ -2,12 +2,16 @@ const db = require('../models');
 
 module.exports = {
     findAllProfile: (req, res) => {
-        db.Profiles.findAll({}).then(dbModel => res.json(dbModel))
+        db.Profiles
+        .findAll({})
+        .then(dbModel => res.json(dbModel))
         .catch(err => res.status(500).json(err));
     
     },
     create: (req, res) => {
-        db.Profile.create(req.body).then(function(profile) {
+        db.Profile
+        .create(req.body)
+        .then(function(profile) {
             res.json(profile);
         });
     }, 
@@ -24,7 +28,9 @@ module.exports = {
 
 
     findAllSymptoms: (req, res) => {
-        db.Symptoms.findAll({}).then(dbModel => res.json(dbModel))
+        db.Symptoms
+        .findAll({})
+        .then(dbModel => res.json(dbModel))
         .catch(err => res.status(500).json(err));
     
     }

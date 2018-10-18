@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import '../App.css';
-// import Api from '../utils';
+import API from '../utils/API/';
 
 class Home extends Component {
     constructor(props) {
@@ -11,14 +11,22 @@ class Home extends Component {
     }
 
     componentDidMount() {
-        let self = this;
-        fetch('/api/symptoms', {
-            method: 'GET'
-        }).then(function(response) {
-            console.log(response);
-            return response.json();
-        }).then(function(data) {
-            self.setState({symptoms: data});
+        // let self = this;
+        // fetch('/api/symptoms', {
+        //     method: 'GET'
+        // }).then(function(response) {
+        //     if (response.status >= 400) {
+        //         throw new Error("Bad response from server");
+        //     }
+        //     return response.json();
+        // }).then(function(data) {
+        //     self.setState({symptoms: data});
+        // })
+
+        API.getAllSymptoms()
+        .then((res) => {
+            console.log(res.data);
+            this.setState({symptoms: res.data});
         })
     }
 
