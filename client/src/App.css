@@ -118,6 +118,13 @@ a{
   margin-right: 10px;
 }
 
-/* body{
-  background-image: url("https://s-media-cache-ak0.pinimg.com/736x/36/2b/d0/362bd0151dfbc41537f89f6df442a2d6--medical-icon-icon-design.jpg");
-} */
+body{
+  background-image: url("./images/ignasi_pattern_s.png");
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+}
+
+#Navbar{
+  display: inline;
+  padding-right: 30px;
+}

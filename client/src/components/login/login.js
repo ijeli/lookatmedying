@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactModalLogin from 'react-modal-login';
 import {facebookConfig, googleConfig} from "./social-config";
-import PostData from '../services/PostData';
+import PrivacyPolicy from './PrivacyPolicy';
  
 class LoginModal extends React.Component {
  
@@ -19,19 +19,20 @@ class LoginModal extends React.Component {
   openModal() {
     this.setState({
       showModal: true,
-      PostData
     });
   }
  
   closeModal() {
     this.setState({
       showModal: false,
-      error: null
+      error: null,
+      Policy: false
     });
   }
   
   onLoginSuccess(method, response) {
     console.log('logged successfully with ' + method);
+    
   }
  
   onLoginFail(method, response) {
@@ -64,18 +65,21 @@ class LoginModal extends React.Component {
  
     return (
       <div>
- 
+ <PrivacyPolicy/>
         <button
-          className = 'btn btn-primary' onClick={() => this.openModal()}
+          className = 'btn-lg btn-primary' onClick={() => this.openModal()}
         >
           Sign In/Sign Up 
         </button>
- 
+        
+
         <ReactModalLogin
           visible={this.state.showModal}
+          // visible={this.state.PrivacyPolicy}
           onCloseModal={this.closeModal.bind(this)}
           loading={this.state.loading}
           error={this.state.error}
+          
           tabs={{
             afterChange: this.afterTabsChange.bind(this)
           }}
