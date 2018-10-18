@@ -10,7 +10,7 @@ const facebook = {
 
   const google = {
     client_id: '443877087430-dhssb52hhj1vjbj798isn4mu4tbji3v5.apps.googleusercontent.com',
-    scope: "https://www.googleapis.com/auth/userinfo.profile"
+    scope: "https://www.googleapis.com/auth/plus.login"
   };
    
   export const googleConfig = google;
