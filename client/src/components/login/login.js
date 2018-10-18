@@ -26,7 +26,6 @@ class LoginModal extends React.Component {
     this.setState({
       showModal: false,
       error: null,
-      Policy: false
     });
   }
   
