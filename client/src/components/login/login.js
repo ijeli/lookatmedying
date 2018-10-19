@@ -36,16 +36,15 @@ class LoginModal extends React.Component {
   
   onLoginSuccess(method, response) {
     console.log('logged successfully with ' + method);
-    if(response.data.code === 200){
-      console.log(response);
-    };
+    console.log(response);
+    
 }
  
   onLoginFail(method, response) {
     console.log('logging failed with ' + method);
     this.setState({
       error: response
-    }).then(console.log(response));
+    })
   }
  
   startLoading() {
