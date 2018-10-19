@@ -37,7 +37,7 @@ class LoginModal extends React.Component {
   onLoginSuccess(method, response) {
     console.log('logged successfully with ' + method);
     if(response.data.code === 200){
-      // this.nextPath('/home');
+      console.log(response);
     };
 }
  
@@ -45,7 +45,7 @@ class LoginModal extends React.Component {
     console.log('logging failed with ' + method);
     this.setState({
       error: response
-    }).then(this.nextPath('/login'));
+    }).then(console.log(response));
   }
  
   startLoading() {
