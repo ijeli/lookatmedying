@@ -30,14 +30,14 @@ class LoginModal extends React.Component {
     });
   }
 
-  nextPath(path) {
-    this.props.history.push(path)
-  }
+  // nextPath(path) {
+  //   this.props.history.push(path)
+  // }
   
   onLoginSuccess(method, response) {
     console.log('logged successfully with ' + method);
     if(response.data.code === 200){
-      this.nextPath('/home');
+      // this.nextPath('/home');
     };
 }
  
@@ -45,7 +45,7 @@ class LoginModal extends React.Component {
     console.log('logging failed with ' + method);
     this.setState({
       error: response
-    })
+    }).then(this.nextPath('/login'));
   }
  
   startLoading() {
