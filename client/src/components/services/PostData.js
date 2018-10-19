@@ -1,4 +1,4 @@
-function PostData(type, userData) {
+export function PostData(type, userData) {
     let BaseURL = 'https://api.mailxengine.com/rest/';
 
     return new Promise((resolve, reject) =>{

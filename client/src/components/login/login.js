@@ -2,7 +2,6 @@ import React from 'react';
 import ReactModalLogin from 'react-modal-login';
 import {facebookConfig, googleConfig} from "./social-config";
 import PrivacyPolicy from './PrivacyPolicy';
-
  
 class LoginModal extends React.Component {
  
@@ -27,6 +26,7 @@ class LoginModal extends React.Component {
     this.setState({
       showModal: false,
       error: null,
+      Policy: false
     });
   }
 
