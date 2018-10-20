@@ -33,6 +33,25 @@ module.exports = {
         .then(dbModel => res.json(dbModel))
         .catch(err => res.status(500).json(err));
     
+    },
+
+    createOneUser: (req, res) => {
+        db.User
+        .create(req.body)
+        .then(function(user) {
+            res.json(user);
+        });
+    },
+
+    findOneUser: (req, res) => {
+        db.User
+        .findOne({
+            where: {
+                email: req.param.email
+            }})
+        .then(function(info) {
+            res.json(info);
+        });
     }
 
 };
