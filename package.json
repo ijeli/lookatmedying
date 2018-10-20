@@ -12,6 +12,7 @@
     "mysql": "^2.16.0",
     "mysql2": "^1.6.1",
     "path": "^0.12.7",
+    "react-columns": "^1.2.0",
     "react-router-dom": "^4.3.1",
     "sequelize": "^4.39.0",
     "yarn": "^1.10.1"

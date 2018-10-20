@@ -1,11 +1,9 @@
 {
 	"development": {
-		"username": "root",
-
-		"password": "Jjb117jjB",
-
-		"database": "check_ill_db",
-		"host": "127.0.0.1",
+		"username": "w1t5vb9o5dgbkkya",
+		"password": "ge32k6xp4ltv0ms9",
+		"database": "s7z6jeee3bz8h92r",
+		"host": "g9fej9rujq0yt0cd.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
 		"dialect": "mysql"
 	},
 

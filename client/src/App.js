@@ -11,6 +11,8 @@ import NewUser from './pages/NewUser';
 
 
 
+
+
 class App extends Component {
   render() {
     return (
@@ -28,6 +30,7 @@ class App extends Component {
             </Switch>
           </BrowserRouter>
         </div>
+     
       </div>
     );
   }
