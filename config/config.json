@@ -2,9 +2,9 @@
 	"development": {
 		"username": "root",
 
-		"password": "Jjb117jjB",
+		"password": "gwbootcamp",
 
-		"database": "check_ill_db",
+		"database": "diseases_db",
 		"host": "127.0.0.1",
 		"dialect": "mysql"
 	},
