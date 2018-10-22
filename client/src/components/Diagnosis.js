@@ -1,11 +1,10 @@
 import React from "react";
-// import '../App.css';
-
-
 
 const Diagnosis = () => 
     <div>
-        <h1>Conditions that match your symptom</h1>
+        <h2>
+            Conditions that match your symptom
+        </h2>
     </div>
 
    

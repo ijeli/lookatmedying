@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import '../App.css';
 
 
-const Navbar = (props) => (
+const Navbar = () => (
   <div>
  <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
 <a className="navbar-brand" href="/">AmIDying</a>
